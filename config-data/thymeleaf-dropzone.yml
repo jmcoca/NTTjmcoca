@@ -1,15 +1,5 @@
 server:
-  port: 9090
-spring:
-  cloud:
-    config:
-      server:
-        git:
-         #url del repo donde están los proyectos
-         uri: https://github.com/jmcoca/NTTjmcoca.git
-         #donde estan los archivos de confi
-         searchPaths: config-data
-
+  port: 9097
 
 spring.servlet.multipart.max-file-size:
   5MB
