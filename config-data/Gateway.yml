@@ -18,3 +18,10 @@ spring:
           #filtro que va a aplicar al path de la llamada de nuestros microservicios (todo lo que lleva costumers)
           predicates:
             - Path=/api/**
+        # nombre de nuestro route
+        - id: thymeleaf-dropzone
+          # uri lo redirijimos a nuestros service costumer service (nombre que esta registrado eureka server)
+          uri: lb://thymeleaf-dropzone
+          #filtro que va a aplicar al path de la llamada de nuestros microservicios (todo lo que lleva costumers)
+          predicates:
+            - Path=/api/**
